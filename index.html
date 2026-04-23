@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё Портфолио | Сайт-визитка</title>
+    <!-- Подключаем файл со стилями -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем иконки с Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== 1. ШАПКА САЙТА С НАВИГАЦИЕЙ ===== -->
+    <!-- Тут находится меню с плавной прокруткой к разделам страницы -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- <span class="code-bracket">{ }</span> - иконка, стилизованная под код -->
+                <span class="code-bracket">{ }</span> МоёПортфолио
+            </div>
+            <nav>
+                <ul>
+                    <!-- #символ со ссылкой на id секции отправляет нас к ней при клике -->
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+    <main>
+
+        <!-- 2. СЕКЦИЯ "ГЛАВНАЯ" -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="greeting">✨ Привет! Меня зовут</span>
+                    <h1>Гайсаров Эмиль</h1>
+                    <h2>
+                        Я <span class="typed-text">Фронтенд-разработчик</span>
+                        <span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        Студент 4 курса по направлению «Информационные системы и программирование».
+                        Создаю красивые, удобные и современные веб-интерфейсы.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+                        <a href="#contact" class="btn btn-outline">Связаться со мной</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/EmilG58"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/emilg58"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Emil58"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Превью-фото в виде стилизованной карточки -->
+                <div class="hero-image">
+                    <div class="image-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. СЕКЦИЯ "ОБО МНЕ" -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <!-- Заголовок секции с подчеркиванием -->
+                <div class="section-header">
+                    <h2>Обо мне</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Образование</h3>
+                        <p>Учусь на 4 курсе Учалинского колледжа горной промышленности по специальности «Информационные системы и программирование».</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Увлечения</h3>
+                        <p>Обожаю верстать сайты, изучать новые технологии и решать алгоритмические задачи. В свободное время играю в видеоигры и делаю видео на своём YouTube канале.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Цель</h3>
+                        <p>Стать высококлассным фронтенд-разработчиком и создавать продукты, которые приносят пользу людям и радуют глаз.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. СЕКЦИЯ "НАВЫКИ" -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Технологии и навыки</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="skills-container">
+                    <!-- Карточка навыка -->
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-name">CSS3 / Flex / Grid</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <div class="skill-name">Git / GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. СЕКЦИЯ "ПРОЕКТЫ" (обновлённая) -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Мои проекты</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Карточка проекта №1: Игра Dino Rush X Geometry -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Geometry Jump</h3>
+                            <p>Гибрид классического динозаврика из Google Chrome и визуального стиля Geometry Dash. Игровая механика как у динозаврика, а спрайты и текстуры взяты из Geometry Dash. Создана на движке Godot с использованием GDScript.</p>
+                            <div class="project-tags">
+                                <span>Godot</span>
+                                <span>GDScript</span>
+                                <span>2D</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Карточка проекта №2: Сайт продажи ключей Steam (диплом) -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Магазин ключей Steam - GameStore</h3>
+                            <p>Дипломный проект — веб-приложение для продажи цифровых ключей игр Steam. Находится в активной разработке. Планируется реализация каталога, корзины и личного кабинета.</p>
+                            <div class="project-tags">
+                                <span>HTML/CSS/JS</span>
+                                <span>React (в планах)</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. СЕКЦИЯ "КОНТАКТЫ" -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Связаться со мной</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Давайте работать вместе</h3>
+                        <p>Я всегда открыт для новых знакомств и интересных проектов. Напишите мне, и я обязательно отвечу!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Россия, г. Учалы</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>emil57@vk.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Мои соцсети</h3>
+                        <div class="social-links-large">
+                            <a href="https://vk.com/emil58"><i class="fab fa-vk"></i></a>
+                            <a href="https://t.me/emilg58"><i class="fab fa-telegram"></i></a>
+                            <a href="https://github.com/EmilG58"><i class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/@Emil58"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. ПОДВАЛ САЙТА -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Гайсаров Эмиль. Все права защищены.</p>
+            <p>Сайт-визитка создан с ❤️ на HTML и CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
